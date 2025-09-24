@@ -19,6 +19,19 @@ import MainLayout from "./layouts/MainLayout";
 // localhost:3000/about
 // localhost:3000/courses
 
+/**
+ * Defines the application's routing configuration using React Router.
+ *
+ * Routes:
+ * - "/" (MainLayout)
+ *   - index: Renders <HomePage />
+ *   - "/home": Renders <HomePage />
+ *   - "/about": Renders <AboutPage />
+ *   - "/courses": Renders <CoursesPage />
+ *
+ * @constant
+ * @type {import('react-router-dom').Router}
+ */
 const router = createBrowserRouter([
   {
     path: "/",

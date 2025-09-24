@@ -1,12 +1,9 @@
 export default function HomePage() {
   return (
     <>
-      <h1>Home</h1>
+      <h1>Hoş Geldiniz!</h1>
       <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-        dignissimos eaque ab aliquam consequatur veritatis perspiciatis numquam
-        exercitationem saepe accusantium vel fugiat eos maxime, molestias iste
-        quam non tempore. Ea.
+        Modern web uygulamalarına giriş yapın. React Router ile sayfalar arasında zahmetsizce geçiş yapabilir, dinamik içerikler oluşturabilirsiniz. Kodun gücünü keşfedin ve projelerinizi bir üst seviyeye taşıyın!
       </p>
     </>
   );

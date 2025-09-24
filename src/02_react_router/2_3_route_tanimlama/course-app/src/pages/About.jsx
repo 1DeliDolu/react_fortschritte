@@ -3,10 +3,16 @@ export default function AboutPage() {
     <>
       <h1>About</h1>
       <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-        dignissimos eaque ab aliquam consequatur veritatis perspiciatis numquam
-        exercitationem saepe accusantium vel fugiat eos maxime, molestias iste
-        quam non tempore. Ea.
+        Welcome to CourseApp! This platform helps you track your learning progress, discover new courses, and connect with a community of learners. 
+        Built with modern web technologies, CourseApp is designed for speed, accessibility, and ease of use.
+      </p>
+      <ul>
+        <li>Browse curated courses</li>
+        <li>Monitor your achievements</li>
+        <li>Share feedback and reviews</li>
+      </ul>
+      <p>
+        Start your learning journey today and unlock new opportunities!
       </p>
     </>
   );

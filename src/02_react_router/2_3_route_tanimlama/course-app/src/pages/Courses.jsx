@@ -3,10 +3,8 @@ export default function CoursesPage() {
     <>
       <h1>Courses</h1>
       <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-        dignissimos eaque ab aliquam consequatur veritatis perspiciatis numquam
-        exercitationem saepe accusantium vel fugiat eos maxime, molestias iste
-        quam non tempore. Ea.
+        Discover our latest courses designed to boost your skills in web development, data science, and more. 
+        Learn from industry experts, access hands-on projects, and join a vibrant community of learners.
       </p>
     </>
   );
