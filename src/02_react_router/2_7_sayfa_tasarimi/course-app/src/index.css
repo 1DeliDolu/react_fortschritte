@@ -1,59 +1,81 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto&family=Rubik+Gemstones&family=Workbench&display=swap');
+/*
+README - src/index.css
+
+Kısa Açıklama:
+- Bu dosya proje genel CSS'ini içerir. Aşağıdaki bölümler bulunur:
+    1) Google Fonts import (dosya başında)
+    2) Tema değişkenleri (`:root`)
+    3) Global reset ve temel stiller
+    4) Layout/Navigation stilleri (header, container, main)
+    5) Help/FAQ özel stilleri
+    6) Form elementleri
+
+Önemli Notlar / Öneriler:
+- Font import: Buradaki `@import` çalışır, ancak performans için `index.html` içinde
+    `<link rel="stylesheet">` kullanılması tercih edilir.
+- `font-family: "Open Sans", serif;` yerine `font-family: "Open Sans", sans-serif;`
+    kullanılması daha doğrudur (Open Sans, sans-serif'tir).
+- Form inputlarında `color: #000` kullanımı koyu arka planda okunurluğu etkileyebilir;
+    kontrastı kontrol edin.
+- Bu dosyada yapılan değişiklikler uygulama görünümünü etkiler; küçük stiller test edilmelidir.
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto&family=Rubik+Gemstones&family=Workbench&display=swap");
 
 :root {
-    --primary: #DEAA79;
-    --secondary: #659287;
+  --primary: #deaa79;
+  --secondary: #659287;
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    color: #fff;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #fff;
 }
 
 body {
-    font-family: "Open Sans", serif;
-    padding: 20px;
-    background-color: var(--secondary);
+  font-family: "Open Sans", serif;
+  padding: 20px;
+  background-color: var(--secondary);
 }
 
 p {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header nav a {
-    padding: 5px;
-    border-radius: 4px;
-    text-decoration: none;
+  padding: 5px;
+  border-radius: 4px;
+  text-decoration: none;
 }
 
 nav a.active {
-    background-color: var(--primary);
+  background-color: var(--primary);
 }
 
 .container {
-    max-width: 1200px;
-    margin: 30px auto;
+  max-width: 1200px;
+  margin: 30px auto;
 }
 
 main {
-    padding: 20px;
-    border-radius: 10px;
-    background: rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
 }
 
 #help-layout nav {
-    display: flex;
-    justify-content: flex-start;
-    gap: 10px;
-    margin: 20px 0;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  margin: 20px 0;
 }
 
 #help-layout nav a {
@@ -65,34 +87,37 @@ main {
 }
 
 #faq .question {
-    background: rgba(0, 0, 0, 0.3);
-    padding: 15px 30px;
-    border-radius: 4px;
-    margin: 15px 0;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 15px 30px;
+  border-radius: 4px;
+  margin: 15px 0;
 }
 
 form label {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
-form input, form label, form textarea {
-    display: block;
+form input,
+form label,
+form textarea {
+  display: block;
 }
 
-form input, form textarea {
-    margin-bottom: 20px;
-    padding: 10px;
-    border-radius: 4px;
-    border: 0;
-    width: 300px;
-    color: #000;
+form input,
+form textarea {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 0;
+  width: 300px;
+  color: #000;
 }
 
 form button {
-    border: 0;
-    padding: 10px;
-    border-radius: 4px;
-    color: #fff;
-    background: var(--primary);
-    cursor: pointer;
+  border: 0;
+  padding: 10px;
+  border-radius: 4px;
+  color: #fff;
+  background: var(--primary);
+  cursor: pointer;
 }
