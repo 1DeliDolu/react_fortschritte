@@ -13,6 +13,7 @@ export default function HelpLayout() {
       <nav>
         <Link to="contact">Contact</Link>
         <Link to="faq">FAQ</Link>
+        <Link to="team">Team</Link>
       </nav>
       <Outlet />
     </div>

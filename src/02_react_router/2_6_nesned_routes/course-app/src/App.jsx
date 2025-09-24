@@ -15,6 +15,7 @@ import CoursesPage from "./pages/Courses";
 import MainLayout from "./layouts/MainLayout";
 import ContactPage from "./pages/help/ContactPage";
 import FaqPage from "./pages/help/FaqPage";
+import TeamPage from "./pages/help/TeamPage";
 import HelpLayout from "./layouts/HelpLayout";
 
 // localhost:3000/
@@ -38,6 +39,7 @@ const router = createBrowserRouter([
           { index: true, element: <ContactPage /> },
           { path: "contact", element: <ContactPage /> },
           { path: "faq", element: <FaqPage /> },
+          { path: "team", element: <TeamPage /> },
         ],
       },
     ],
