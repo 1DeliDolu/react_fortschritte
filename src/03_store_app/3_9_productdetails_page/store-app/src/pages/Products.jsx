@@ -8,7 +8,7 @@ export default function ProductsPage() {
   useEffect(() => {
     async function fetchProducts() {
       try {
-        const response = await fetch("http://localhost:5000/products/");
+        const response = await fetch("http://localhost:5001/products/");
         const data = await response.json();
         setLoadedProducts(data);
       } catch (error) {

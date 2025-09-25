@@ -7,6 +7,6 @@ export default function CourseDetailsPage() {
 
 export async function courseDetailsLoader({ params }) {
   const { courseid } = params;
-  const res = await fetch("http://localhost:5000/courses/" + courseid);
+  const res = await fetch("http://localhost:5001/courses/" + courseid);
   return res.json();
 }

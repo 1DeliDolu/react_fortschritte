@@ -6,7 +6,7 @@ export default function CourseDetailsPage() {
     <div className="course-details">
       <h1>{course.title}</h1>
       <div className="course-desc">
-        <img src={`http://localhost:5000/images/${course.image}`} alt="" />
+        <img src={`http://localhost:5001/images/${course.image}`} alt="" />
         <div>
           <div>{course.description}</div>
           <div className="icons">
@@ -28,7 +28,7 @@ export default function CourseDetailsPage() {
 
 export async function courseDetailsLoader({ params }) {
   const { courseid } = params;
-  const response = await fetch("http://localhost:5000/courses/" + courseid);
+  const response = await fetch("http://localhost:5001/courses/" + courseid);
 
   if (!response.ok) {
     throw new Response("Kurs bulunamadı", { status: 404 });

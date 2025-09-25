@@ -122,7 +122,7 @@ async function payment(order) {
       id: "BY789",
       name: "John",
       surname: "Doe",
-      gsmNumber: "+905350000000",
+      gsmNumber: "+905350010000",
       email: "email@email.com",
       identityNumber: "74300864791",
       lastLoginDate: "2015-10-05 12:43:35",
