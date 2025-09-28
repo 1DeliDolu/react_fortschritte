@@ -25,6 +25,23 @@ import CourseDetailsPage, {
 // localhost:3000/about
 // localhost:3000/courses
 
+/**
+ * Defines the application's route configuration using React Router.
+ *
+ * Routes:
+ * - "/" (MainLayout)
+ *   - index: HomePage
+ *   - "home": HomePage
+ *   - "about": AboutPage
+ *   - "courses": CoursesPage (with coursesLoader)
+ *   - "courses/:courseid": CourseDetailsPage (with courseDetailsLoader)
+ *   - "help" (HelpLayout)
+ *     - "contact": ContactPage
+ *     - "faq": FaqPage
+ *
+ * Each route specifies its path, the component to render (`element`), and optional data loaders.
+ */
+
 const router = createBrowserRouter([
   {
     path: "/",

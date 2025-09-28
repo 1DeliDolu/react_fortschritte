@@ -14,7 +14,7 @@ export async function courseAction({ request, params }) {
     description: data.get("description"),
   };
 
-  const response = await fetch("http://localhost:5000/courses", {
+  const response = await fetch("http://localhost:5001/courses", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(eventData),
