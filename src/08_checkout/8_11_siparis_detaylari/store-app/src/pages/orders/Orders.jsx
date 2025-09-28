@@ -142,7 +142,7 @@ export default function OrdersPage() {
                   <TableRow key={item.id}>
                     <TableCell>
                       <img
-                        src={`http://localhost:5000/images/${item.image}`}
+                        src={`http://localhost:5001/images/${item.image}`}
                         style={{ height: 60 }}
                       />
                     </TableCell>

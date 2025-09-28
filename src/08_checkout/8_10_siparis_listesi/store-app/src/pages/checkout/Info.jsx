@@ -34,7 +34,7 @@ export default function Info() {
             <ListItemAvatar>
               <Avatar
                 variant="square"
-                src={`http://localhost:5000/images/${item.product.image}`}
+                src={`http://localhost:5001/images/${item.product.image}`}
               ></Avatar>
             </ListItemAvatar>
             <ListItemText

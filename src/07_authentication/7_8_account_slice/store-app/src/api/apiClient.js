@@ -2,7 +2,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 import { router } from "../App";
 
-axios.defaults.baseURL = "http://localhost:5000/";
+axios.defaults.baseURL = "http://localhost:5001/";
 axios.defaults.withCredentials = true;
 
 axios.interceptors.response.use(

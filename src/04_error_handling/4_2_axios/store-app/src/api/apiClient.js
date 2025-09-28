@@ -1,6 +1,6 @@
 import axios from "axios";
 
-axios.defaults.baseURL = "http://localhost:5000/";
+axios.defaults.baseURL = "http://localhost:5001/";
 
 const methods = {
   get: (url) => axios.get(url).then((response) => response.data),
